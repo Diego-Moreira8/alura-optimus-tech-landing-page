@@ -1,0 +1,298 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Meu CSS começa aqui */
+:root {
+    --main-color: #8E2424;
+    --text-color: #667085;
+    --tittle-color: #101828;
+}
+
+body {
+    font-family: Inter, sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 18px 100px;
+    font-weight: 500;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+}
+
+.brand {
+    text-decoration: none;
+    color: #3A404E;
+    display: flex;
+    align-items: center;
+}
+
+.brand img{
+    width: 27px;
+    margin-right: 8px;
+}
+
+.navlinks ul {
+    display: flex;
+    margin-left: 120px;
+}
+
+.navlinks ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 0 8px;
+}
+
+button {
+    width: 112px;
+    height: 44px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    color: var(--text-color);
+    border: none;
+    border-radius: 8px;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.signin {
+    background-color: var(--main-color);
+    color: white;
+}
+
+
+header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.subheading {
+    color: var(--main-color);
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--tittle-color);
+    margin-bottom: 36px;
+}
+
+p {
+    color: var(--text-color);
+}
+
+header p {
+    width: 50%;
+    text-align: center;
+}
+
+.highlights {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px 100px 100px ;
+}
+
+.wrap-highlights {
+    width: 20%;
+}
+
+.numbers {
+    color: var(--main-color);
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.highlight-title {
+    margin-bottom: 8px;
+    color: var(--tittle-color);
+    font-weight: 500;
+}
+
+
+.vacancies {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.alert {
+    color: var(--main-color);
+    font-weight: 500;
+    background-color: #8e24241d;
+    padding: 4px 12px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--tittle-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.vacancies p {
+    margin-bottom: 64px;
+}
+
+.vacancies img {
+    width: 85%;
+    margin-bottom: 64px;
+}
+
+.vacancy-category {
+    width: 50%;
+}
+
+h4 {
+    color: var(--tittle-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+}
+
+.vacancy-description {
+    border: 2px solid #EAECF0;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+h5 {
+    color: var(--tittle-color);
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 32px;
+}
+
+.vacancy-description span {
+    color: var(--text-color);
+    margin-right: 24px;
+}
+
+
+
+.coworker-quote {
+    background-color: #8e24240a;
+    margin: 0 100px 96px 100px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 64px 64px;
+    border-radius: 16px;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 56px;
+    margin-top: 16px;
+}
+
+.coworker-name {
+    font-weight: 500;
+    padding: 16px 0;
+}
+
+.coworker-department {
+    color: var(--text-color);
+}
+
+footer {
+    background-color: #F9FAFB;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 100px 300px;
+}
+
+footer h3 {
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin-bottom: 40px;
+}
+
+input { 
+    width: 360px;
+    height: 44px;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    padding: 0 16px;
+}
+
+.email-field {
+    margin-bottom: 32px;
+}
+
+.email-field button {
+    background-color: var(--main-color);
+    color: white;
+    margin-left: 16px;
+}
+
+footer span {
+    color: #98A2B3;
+}
+
+footer ::placeholder {
+    color: var(--text-color);
+}
