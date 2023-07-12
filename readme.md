@@ -1,4 +1,4 @@
-#Landing Page
+# Landing Page
 
 Projeto proposto pela Giovanna Moeller (Desenvolvedora iOS & Web no Itaú) no Alura 7 Days of Code.
 
